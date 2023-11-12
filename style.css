@@ -1,0 +1,113 @@
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  background: rgba(45,9,34,255);
+  color: white;
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.monospace {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  margin: 0; /* Remove default margin for paragraphs */
+}
+
+
+
+pre {
+  white-space: pre-wrap; /* Preserve whitespace and wrap lines */
+}
+
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.0; /* You can adjust the opacity to give a visual indication of being disabled */
+}
+
+#console {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin:auto;
+}
+
+#consolesContainer {
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  font-size: inherit; /* Adjust the font size as needed */
+}
+
+#output {
+  display: inline-block;
+}
+
+.text { 
+  font-family: 'Ubuntu Mono', monospace;
+  color: rgba(138,221,48,255);
+  position: relative;
+  display: inline-block;
+  line-height: 24px;
+  min-width: 248px;
+  white-space: pre-line;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Take up the entire width */
+  
+}
+
+#command-input {
+  flex: 1; /* Take remaining space */
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  caret-color: transparent; /* Set caret color to be transparent */
+  font-size: inherit;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.blinker {
+  position: absolute;
+  background-color: white;
+  vertical-align: top;
+  width: 12px;
+  height: 24px;
+  animation: smoothBlink 1s infinite;
+  
+}
+
+.white-text {
+  color: white !important;
+}
+
+
+
+
+@keyframes smoothBlink {
+  0%, 100% { opacity: 0.0; }
+  50% { opacity: 0.5; }
+}
+
+
+
+.tilde {
+  color: rgba(60,88,180,255);
+}
+
+.dollar {
+  color: white;
+}
+
+#welcomeInfo{
+  color:rgba(99,156,207,255);
+}
+
+#welcomeAsciImage {
+  white-space: pre;
+}
